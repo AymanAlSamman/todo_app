@@ -5,7 +5,7 @@ import 'package:TODO/features/tasks/page/tasks_view.dart';
 import 'settings_provider/settings_provider.dart';
 
 class LayoutView extends StatelessWidget {
-  static const String routName = 'Layout';
+  static const String routeName = 'Layout';
 
   const LayoutView({super.key});
 

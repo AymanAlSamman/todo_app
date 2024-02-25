@@ -8,6 +8,19 @@ class ApplicationThemeManager {
   static ThemeData lightTheme = ThemeData(
     primaryColor: primaryColor,
     scaffoldBackgroundColor: const Color(0xffDFECDB),
+
+    //APP BAR
+
+    appBarTheme: const AppBarTheme(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        centerTitle: true,
+        toolbarHeight: 120,
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        )),
+
+    // BOTTOM NAVIGATION BAR
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         elevation: 0,
         backgroundColor: Colors.transparent,
@@ -29,19 +42,19 @@ class ApplicationThemeManager {
         backgroundColor: primaryColor,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
-            side: BorderSide(
+            side: const BorderSide(
               color: Colors.white,
               width: 4,
             ))),
 
     //BottomAppBarTheme *************************
-    bottomAppBarTheme: BottomAppBarTheme(
+    bottomAppBarTheme: const BottomAppBarTheme(
       color: Colors.white,
       padding: EdgeInsets.zero,
     ),
 
     //TextTheme *******************************
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       titleLarge: TextStyle(
         fontFamily: "Poppins",
         fontSize: 22,
@@ -73,6 +86,18 @@ class ApplicationThemeManager {
   static ThemeData darkTheme = ThemeData(
     primaryColor: primaryColor,
     scaffoldBackgroundColor: const Color(0xff060E1E),
+
+    //APP BAR
+    appBarTheme: const AppBarTheme(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        centerTitle: true,
+        toolbarHeight: 120,
+        iconTheme: IconThemeData(
+          color: Color(0xff060E1E),
+        )),
+
+    // BOTTOM NAVIGATION BAR
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       elevation: 0,
       backgroundColor: Colors.transparent,
@@ -95,20 +120,20 @@ class ApplicationThemeManager {
       backgroundColor: primaryColor,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50),
-          side: BorderSide(
+          side: const BorderSide(
             width: 5,
             color: Color(0xff141922),
           )),
     ),
 
     //BottomAppBarTheme *************************
-    bottomAppBarTheme: BottomAppBarTheme(
+    bottomAppBarTheme: const BottomAppBarTheme(
       color: Color(0xff060E1E),
       padding: EdgeInsets.zero,
     ),
 
     //TextTheme *******************************
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       titleLarge: TextStyle(
         fontFamily: "Poppins",
         fontSize: 22,
